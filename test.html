@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+ 
+	<style>
+		table {border-color:#fff;}
+		.selected {background-color:#eee;}
+	</style>
+ 
+</head>
+ 
+<body>
+ 
+<a id="clickforspace" href="#">Click Here</a>
+ 
+<script>
+    $("#clickforspace").click(function(e) { 
+    e.preventDefault(); 
+    var press = jQuery.Event("keypress");
+    press.ctrlKey = false;
+    press.which = 102;
+    $("whatever").trigger(press);
+                                      });
+</script>
+ 
+</body>
