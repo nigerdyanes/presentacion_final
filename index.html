@@ -320,13 +320,27 @@
 		<script>
 			$(document).ready(function(){
 			$("#disparador").click(function(){
-				$("#div0").show( "slide", { direction: "left"  }, 800 );
-				$("#div1").show( "slide", { direction: "left"  }, 1000 );
-				$("#div2").show( "slide", { direction: "left"  }, 1200 );
-				$("#div3").show( "slide", { direction: "left"  }, 1400 );
-				$("#div4").show( "slide", { direction: "left"  }, 1600 );
-				$("#div5").show( "slide", { direction: "left"  }, 1800 );
-				$("#div6").show( "slide", { direction: "left"  }, 2000 );
+				setTimeout(function(){
+					$("#div0").show( "slide", { direction: "left"  }, 1000 );
+				}, 1000);
+				setTimeout(function(){
+					$("#div1").show( "slide", { direction: "left"  }, 1000 );
+				}, 2000);
+				setTimeout(function(){
+					$("#div2").show( "slide", { direction: "left"  }, 1000 );
+				}, 3000);
+				setTimeout(function(){
+					$("#div3").show( "slide", { direction: "left"  }, 1000 );
+				}, 4000);
+				setTimeout(function(){
+					$("#div4").show( "slide", { direction: "left"  }, 1000 );
+				}, 5000);
+				setTimeout(function(){
+					$("#div5").show( "slide", { direction: "left"  }, 1000 );
+				}, 6000);
+				setTimeout(function(){
+					$("#div6").show( "slide", { direction: "left"  }, 1000 );
+				}, 7000);
 			});
 			});
 		</script>
